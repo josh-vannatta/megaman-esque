@@ -1,0 +1,16 @@
+// Colors
+$paper: #f5f8fa;
+$light-grey: #e8e8e8;
+$black: black;
+$white: white;
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-header: "Montserrat", "Raleway", sans-serif;
+
+// Base
+$body-bg: $paper;
+$overlay: rgba(8, 13, 15, 0.5);
+@function transition($speed) {
+  @return all $speed cubic-bezier(0.25, 0.8, 0.25, 1);
+}

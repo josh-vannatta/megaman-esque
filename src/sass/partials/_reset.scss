@@ -1,0 +1,20 @@
+body *, .main-font {
+  font-family: $font-family-sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, .header-font {
+  font-family: $font-family-header !important;
+}
+
+input:focus, button:focus {
+  box-shadow: 0 0 !important;
+  outline: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none !important;
+}
