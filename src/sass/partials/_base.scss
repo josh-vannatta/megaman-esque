@@ -6,6 +6,11 @@ body {
 #app {
   overflow: hidden;
   position: relative;
+  top: 56px;
+}
+
+canvas {
+  background: $black;
 }
 
 .font-header {

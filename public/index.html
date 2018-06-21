@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>megaman-esque</title>
+    <title>Megaman-esque</title>
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/icon/apple-icon-72x72.png">
@@ -23,9 +23,40 @@
     <link rel="stylesheet" href="assets/app.css">
   </head>
   <body>
-    <main id="app" class="container">
-      <!-- output -->
+    <!-- Fixed navbar -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark z-depth-2">
+        <a class="navbar-brand" href="#">Megaman-esque</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:;" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Options</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main id="app" role="main" class="container px-5 pb-5 z-depth-1 z-hover mt-5">
+      <h1 class="mt-5">Mech Apocolypse</h1>
+      <p class="lead">A side scrolling shooter with megaman controls, and a <code>Samus</code>-like protagonist who can call down a
+        <code>Gundam</code>-like mech to rain destruction on her enemies. Set in a post-apocolyptic Tokyo <span style="opacity: 0.3">(?)</span>.</p>
+      <p>Use <a href="javascript:;">WSAD</a> to control and <a href="javascript:;">SPACEBAR</a> to shoot</p>
     </main>
+
+    <!-- Sticky footer -->
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Copyright @2018 Josh & Danny Productions</span>
+      </div>
+    </footer>
     <script type="text/javascript" src="assets/app.js"></script>
   </body>
 </html>
