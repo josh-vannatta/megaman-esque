@@ -1,14 +1,19 @@
-// import _ from 'lodash';
+require('bootstrap');
+import _ from 'lodash';
 
-// require('bootstrap');
+import SimpleGame from './game/app.ts';
 
-function component() {
-  let element = document.createElement('canvas');
-  element.className = 'w-100';
-  element.id = 'main';
-  // element.innerHTML = _.join(['howdy', 'patna!']);
-
-  return element;
+window.onload = () => {
+  const game = new SimpleGame({
+    width: 800,
+    height: 600,
+    parent: document.getElementById('app'),
+    physics: {
+      default: 'arcade',
+      arcade: {
+        gravity: { y: 300 },
+        debug: false,
+      }
+    }
+  });
 }
-
-document.getElementById('app').appendChild(component());
